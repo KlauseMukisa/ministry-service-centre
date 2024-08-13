@@ -1,0 +1,12 @@
+/* Adding animations for list items in the procedures section */
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.list-group-item:hover {
+    background-color: #e9f9e9;
+    transform: translateY(-5px);
+}

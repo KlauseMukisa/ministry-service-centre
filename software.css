@@ -1,0 +1,84 @@
+/* Software Assistance Section Styles */
+#software {
+    background-color: #f9f9f9;
+}
+
+.software-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.software-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.software-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.software-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.software-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles for Software Assistance Section */
+@media (max-width: 1199.98px) {
+    .software-content h3 {
+        font-size: 1.5rem;
+    }
+    .software-content p,
+    .software-content ul {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .software-content {
+        padding: 15px;
+    }
+    .software-content h3 {
+        font-size: 1.4rem;
+    }
+    .software-content p,
+    .software-content ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .software-content {
+        padding: 10px;
+    }
+    .software-content h3 {
+        font-size: 1.2rem;
+    }
+    .software-content p,
+    .software-content ul {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .software-content {
+        padding: 8px;
+    }
+    .software-content h3 {
+        font-size: 1.1rem;
+    }
+    .software-content p,
+    .software-content ul {
+        font-size: 0.8rem;
+    }
+}

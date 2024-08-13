@@ -1,0 +1,40 @@
+.bg-light-green {
+    background-color: #e8f5e9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2e7d32; /* Darker green for titles */
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #1b5e20; /* Darker green for card titles */
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.list-group-item h5 {
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}

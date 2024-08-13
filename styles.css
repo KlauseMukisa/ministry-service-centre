@@ -1,0 +1,196 @@
+/* Custom CSS for hero section and animations */
+.hero-section {
+    background: url('hero3.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.welcome-message {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slide-up 5s ease-in-out infinite;
+    font-weight: bold;
+}
+@keyframes slide-up {
+    0% { transform: translateY(20px); opacity: 0; }
+    50% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-20px); opacity: 0; }
+}
+.btn-whatsapp {
+    background-color: #32de84;
+    color: white;
+    font-size: 1.25rem;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}
+.nav-links {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    gap: 20px;
+}
+.nav-links a {
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+}
+section {
+    padding: 60px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.bg-light-green {
+    background-color: #d4f1d4;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: #333;
+}
+.section-title::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #25D366;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.section-title:hover::before {
+    width: 100%;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+.footer-links a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-links a:hover {
+    color: #25D366;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1199.98px) {
+    .container {
+        padding: 0 30px;
+    }
+    .welcome-message {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .hero-section {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .welcome-message {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .nav-links {
+        top: 10px;
+        align-items: flex-start;
+    }
+    .btn-whatsapp {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .hero-content {
+        margin-bottom: 30px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .welcome-message {
+        font-size: 1.5rem;
+    }
+    .btn-whatsapp {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .footer-links a {
+        font-size: 0.8rem;
+        margin: 0 10px;
+    }
+    .footer-contact p, .footer-social p {
+        font-size: 0.9rem;
+    }
+    .footer-social .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+    .btn-whatsapp {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    .footer {
+        padding: 20px 10px;
+    }
+}
