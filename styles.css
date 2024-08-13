@@ -13,6 +13,7 @@
     padding: 0 20px;
     overflow: hidden;
 }
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -110,8 +111,6 @@ footer {
     text-decoration: underline;
     transform: scale(1.1);
 }
-
-
 
 /* Responsive Styles */
 @media (max-width: 1199.98px) {

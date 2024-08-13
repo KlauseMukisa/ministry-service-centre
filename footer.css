@@ -61,51 +61,6 @@
     margin-right: 10px;
 }
 
-.footer-social a {
-    color: #333;
-    font-size: 1.5rem;
-    margin-right: 15px;
-    transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-    color: forestgreen;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #e4e4e4;
-    padding-top: 10px;
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 0.875rem;
-}
-.footer-social {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer-social h5 {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color: #333;
-    font-weight: bold;
-}
-
-.footer-social a {
-    color: #333;
-    font-size: 1.5rem; /* Adjust size as needed */
-    transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-    color: forestgreen; /* Or any color you prefer for hover effect */
-}
-
 .footer-social {
     display: flex;
     flex-direction: column;
@@ -133,4 +88,16 @@
 
 .social-icons a:hover {
     color: #ff0000; /* YouTube's red color, or another color of your choice */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.875rem;
 }
