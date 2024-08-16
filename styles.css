@@ -1,6 +1,6 @@
 /* General Styles */
 .hero-section {
-    background: url('download.jpg') no-repeat center center;
+    background: url('img5.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     height: 80vh;
@@ -16,10 +16,10 @@
 }
 
 @keyframes slide {
-    0% { background-image: url('download.jpg'); }
-    33% { background-image: url('hero.jpg'); }
-    67% { background-image: url('hero2.jpg'); }
-    100% { background-image: url('images.jpg'); }
+    0% { background-image: url('img5.jpg'); }
+    33% { background-image: url('img6.jpg'); }
+    67% { background-image: url('img7.webp'); }
+    100% { background-image: url('img8.jpg'); }
 }
 
 .hero-content {
@@ -97,7 +97,7 @@ section {
 section {
     padding: 60px 20px;
     margin-bottom: 30px; /* Space between sections */
-    border-radius: 8px; /* Adjust radius as needed */
+  
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -292,5 +292,25 @@ footer {
     .nav-links a {
         font-size: 1rem; /* Adjust font size for smaller screens */
         padding: 8px 12px; /* Adjust padding for better spacing */
+    }
+}
+
+
+/* Ensure nav links are visible and clickable on small screens */
+@media (max-width: 767px) {
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7); /* Add background to make links stand out */
+        padding: 10px;
+        top: auto;
+        left: auto;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 1rem; /* Adjust font size for better readability on small screens */
     }
 }

@@ -155,14 +155,36 @@
     </style>
 </head>
 <body>
-    <section id="hero" class="hero-section">
-        <div class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#software">Software Assistance</a>
-            <a href="#procedures">Procedures</a>
-            <a href="#contact">Contact</a>
+
+        <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">MUBS ICT Ministry</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#software">Software Assistance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#procedures">Procedures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    
+    <section id="hero" class="hero-section">
+       
         <div class="hero-content">
             <div class="welcome-message">
                 <p>Welcome to the MUBS ICT Ministry Service Centre</p>
@@ -231,7 +253,6 @@
     </section>
     
     
-
     <section id="procedures" class="bg-light-green py-5">
         <div class="container">
             <h2 class="section-title text-center mb-4">Step-by-Step Procedures</h2>
@@ -455,6 +476,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         // Show or hide the Back to Top button based on scroll position
         document.addEventListener('scroll', function() {

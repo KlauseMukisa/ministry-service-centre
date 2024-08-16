@@ -1,21 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const accordions = document.querySelectorAll('.accordion');
 
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', function () {
-            const targetId = this.getAttribute('data-target');
-            const targetContent = document.getElementById(targetId);
+function toggleStep(stepId) {
+    var step = document.getElementById(stepId);
+    if (step.classList.contains('d-none')) {
+        step.classList.remove('d-none');
+    } else {
+        step.classList.add('d-none');
+    }
+}
 
-            // Toggle the target content
-            targetContent.classList.toggle('open');
-
-            // Optionally, you can close other sections
-            // accordions.forEach(item => {
-            //     if (item !== this) {
-            //         const otherContent = document.getElementById(item.getAttribute('data-target'));
-            //         otherContent.classList.remove('open');
-            //     }
-            // });
-        });
-    });
-});
