@@ -314,3 +314,54 @@ footer {
         font-size: 1rem; /* Adjust font size for better readability on small screens */
     }
 }
+ /* Existing general styles for btn-whatsapp */
+.btn-whatsapp {
+    background-color: #32de84;
+    color: white;
+    font-size: 1.25rem;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}
+
+/* Responsive styles for the button */
+@media (max-width: 767.98px) {
+    .btn-whatsapp {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .hero-content {
+        text-align: center; /* Center content on small screens */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .btn-whatsapp {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 0 15px; /* Ensure padding around content on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-whatsapp {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 0 10px; /* Reduce padding further for very small screens */
+    }
+}
