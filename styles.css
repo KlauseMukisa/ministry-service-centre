@@ -1,65 +1,22 @@
 /* General Styles */
-
-body{
-    background: #f9f9f9;
-}
-
-
-.hero-section {
-    background: url('img5.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding: 0 20px;
-    overflow: hidden;
-    animation: slide 15s infinite;
-}
-
-@keyframes slide {
-    0% { background-image: url('img5.jpg'); }
-    33% { background-image: url('img6.jpg'); }
-    67% { background-image: url('img7.webp'); }
-    100% { background-image: url('img8.jpg'); }
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.welcome-message {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    animation: slide-up 5s ease-in-out infinite;
-    font-weight: bold;
-}
-
-@keyframes slide-up {
-    0% { transform: translateY(20px); opacity: 0; }
-    50% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(-20px); opacity: 0; }
-}
-
-.btn-whatsapp {
-    background-color: #32de84;
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none; /* Hidden by default */
+    background-color: #007bff; /* Change as needed */
     color: white;
-    font-size: 1.25rem;
-    padding: 15px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.btn-whatsapp:hover {
-    background-color: #1ebe57;
-    transform: scale(1.05);
+.back-to-top.show {
+    display: block; /* Shows the button when scrolled down */
 }
+
 
 .nav-links {
     position: absolute;
