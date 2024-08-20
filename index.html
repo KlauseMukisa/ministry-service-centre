@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Section with Sliding Images</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -12,93 +15,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Favicon -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pro.css">
-    <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pro.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <link rel="icon" href="favicon.ico">
 
     <style>
-        .hero-section {
-            position: relative;
-            overflow: hidden;
-            color: #fff;
-        }
+     
+     .hero-section {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Professional and modern font */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
 
-        .hero-section .carousel-item {
-            background-size: cover;
-            background-position: center;
-            height: 100vh; /* Full viewport height */
-        }
+.hero-section .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
 
-        .hero-section .carousel-item .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            padding: 0 20px;
-        }
+.hero-section .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+    max-width: 80%; /* Limiting the width for better readability */
+}
 
-        .hero-section .carousel-item .welcome-message p {
-            font-size: 1.5rem;
-            margin: 0;
-            line-height: 1.4;
-        }
+.hero-section .welcome-message p {
+    font-size: 2.5rem; /* Increase font size for better visibility */
+    margin: 0 0 10px;
+    line-height: 1.5;
+    font-weight: 300; /* Lighter font for a modern look */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better contrast */
+    animation: fadeInUp 1s ease-out both; /* Simple and clean fade-in animation */
+}
 
-        .hero-section .carousel-item .btn-whatsapp {
-            background-color: #25D366; /* WhatsApp green */
-            color: #fff;
-            font-size: 1.1rem;
-            padding: 12px 24px;
-            border-radius: 5px;
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
+.hero-section .btn-whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 14px 28px;
+    border-radius: 30px; /* Rounded corners for a modern button style */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Elevated shadow for emphasis */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    border: none; /* Ensure no border on WhatsApp button */
+}
 
-        .hero-section .carousel-item .btn-whatsapp:hover {
-            background-color: #1EBE50; /* Slightly darker green on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-        }
+.hero-section .btn-whatsapp:hover {
+    background-color: #1EBE50; /* Slightly darker green on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+    border: none; /* Ensure no border on hover */
+}
 
-        .hero-section .carousel-item .btn-whatsapp i {
-            margin-right: 8px;
-        }
+.hero-section .btn-whatsapp i {
+    margin-right: 10px;
+    font-size: 1.3rem; /* Slightly larger icon */
+    border: none; /* Ensure no border on icon */
+}
 
-        .hero-section .carousel-control-prev, .hero-section .carousel-control-next {
-            width: 5%;
-            height: 100%;
-            top: 0;
-            background-color: transparent; /* Remove background color */
-        }
+.hero-section .carousel-control-prev,
+.hero-section .carousel-control-next {
+    width: 5%;
+    height: 100%;
+    top: 0;
+    background-color: transparent; /* No background color for cleaner controls */
+    border: none; /* Ensure no border on carousel controls */
+    padding: 0; /* Remove padding */
+}
 
-        .hero-section .carousel-control-prev-icon, .hero-section .carousel-control-next-icon {
-            background-color: rgba(255, 255, 255, 0.7); /* Light background for icons */
-            border-radius: 50%;
-        }
+.hero-section .carousel-control-prev-icon,
+.hero-section .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for icons */
+    border-radius: 50%;
+    padding: 10px; /* Larger clickable area */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    border: none; /* Ensure no border on icons */
+}
 
-        @media (max-width: 767.98px) {
-            .hero-section .carousel-item .welcome-message p {
-                font-size: 1.2rem;
-            }
+.hero-section .carousel-control-prev-icon:hover,
+.hero-section .carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Brighter icon background on hover */
+    border: none; /* Ensure no border on hover */
+}
 
-            .hero-section .carousel-control-prev, .hero-section .carousel-control-next {
-                width: 10%;
-            }
-        }
+@media (max-width: 767.98px) {
+    .hero-section .hero-content {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .hero-section .welcome-message p {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-section .carousel-control-prev,
+    .hero-section .carousel-control-next {
+        width: 10%; /* Wider controls on smaller screens */
+    }
+
+    .hero-section .btn-whatsapp {
+        font-size: 1rem; /* Smaller font size for the button */
+        padding: 10px 20px; /* Adjust padding for a better fit on small screens */
+        border-radius: 25px; /* Adjust border-radius for a more compact look */
+    }
+}
+
     </style>
 </head>
 <body>
 
     <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">MUBS ICT Ministry</a>
+        <a class="navbar-brand" href="#">MUBS TechCentre</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -126,76 +170,77 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#heroCarousel" data-slide-to="1"></li>
-                <li data-target="#heroCarousel" data-slide-to="2"></li>
-                <li data-target="#heroCarousel" data-slide-to="3"></li>
-            </ol>
+   
+  <!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="4000"> <!-- Set interval to 4000ms (4 seconds) -->
+        <!-- Carousel Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+            <li data-target="#heroCarousel" data-slide-to="3"></li>
+        </ol>
 
-            <!-- Carousel Inner -->
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('images/img5.jpg');">
-                    <div class="hero-content">
-                        <div class="welcome-message">
-                            <p>Welcome to the MUBS ICT Ministry Service Centre</p>
-                            <p>Your tech support hub for a smoother university experience!</p>
-                        </div>
-                        <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
-                        </a>
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/sec1.jpg');">
+                <div class="hero-content">
+                    <div class="welcome-message">
+                        <p>Welcome to the MUBS ICT Ministry Service Centre</p>
+                        <p>Your tech support hub for a smoother university experience!</p>
                     </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('images/img6.jpg');">
-                    <div class="hero-content">
-                        <div class="welcome-message">
-                            <p>Explore Our Comprehensive Software Support Services</p>
-                            <p>We're here to ensure you have the tools you need for success!</p>
-                        </div>
-                        <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('images/img7.webp');">
-                    <div class="hero-content">
-                        <div class="welcome-message">
-                            <p>Connect with Our ICT Specialists Anytime, Anywhere</p>
-                            <p>We are just a message away to assist you with your tech needs!</p>
-                        </div>
-                        <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('images/img8.jpg');">
-                    <div class="hero-content">
-                        <div class="welcome-message">
-                            <p>Your One-Stop Hub for All ICT Needs</p>
-                            <p>Get the support you need to excel in your academic journey.</p>
-                        </div>
-                        <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Hi Kacu👋s
-                        </a>
-                    </div>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Hi Kacu👋
+                    </a>
                 </div>
             </div>
-
-            <!-- Carousel Controls -->
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item" style="background-image: url('images/sec2.jpg');">
+                <div class="hero-content">
+                    <div class="welcome-message">
+                        <p>Explore Our Comprehensive Software Support Services</p>
+                        <p>We're here to ensure you have the tools you need for success!</p>
+                    </div>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Hi Kacu👋
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/sec3.jpg');">
+                <div class="hero-content">
+                    <div class="welcome-message">
+                        <p>Connect with Our ICT Specialists Anytime, Anywhere</p>
+                        <p>We are just a message away to assist you with your tech needs!</p>
+                    </div>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Hi Kacu👋
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/sec4.jpg');">
+                <div class="hero-content">
+                    <div class="welcome-message">
+                        <p>Your One-Stop Hub for All ICT Needs</p>
+                        <p>Get the support you need to excel in your academic journey.</p>
+                    </div>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Hi Kacu👋
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
 
 
 
@@ -562,7 +607,7 @@
             <div class="footer-container">
                 <div class="footer-logo">
                     <a href="#hero">
-                        <img src="images/logo2.jpg" alt="MUBS ICT Ministry Service Centre Logo" class="footer-logo-img">
+                        <img src="images/logo.jpg" alt="MUBS ICT Ministry Service Centre Logo" class="footer-logo-img">
                     </a>
                 </div>
                 <div class="footer-links">
@@ -575,7 +620,7 @@
                 </div>
                 <div class="footer-contact">
                     <h5>Contact Us</h5>
-                    <p><i class="fas fa-map-marker-alt"></i> MUBS ICT Ministry Service Centre, Jinja Campus</p>
+                    <p><i class="fas fa-map-marker-alt"></i> MUBS ICT Ministry Service Centre, Main Campus</p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:ictministry@mubs.ac.ug">ictministry@mubs.ac.ug</a></p>
                     <p><i class="fas fa-phone"></i> +256 759 315 745</p>
                     <p><i class="fas fa-phone"></i> +256 755 984 155</p>
@@ -622,24 +667,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            // Show/hide "Back to Top" button
-            var backToTopButton = $('.back-to-top');
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 200) {
-                    backToTopButton.fadeIn();
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            // Show or hide the button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) { // Show button after scrolling down 300px
+                    backToTopButton.style.display = 'block';
                 } else {
-                    backToTopButton.fadeOut();
+                    backToTopButton.style.display = 'none';
                 }
             });
-
-            // Scroll back to top
-            backToTopButton.on('click', function (e) {
-                e.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, '300');
+            
+            // Smooth scroll to the top
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
+    
 </body>
 </html>

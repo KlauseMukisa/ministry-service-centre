@@ -1,0 +1,61 @@
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color for contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust as needed */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.footer-links h5,
+.footer-contact h5,
+.footer-social h5 {
+    color: #fff; /* Ensure headers are readable */
+    margin-bottom: 15px; /* Space below headers */
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #ccc; /* Lighter text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #fff; /* Highlight links on hover */
+}
+
+.footer-contact p {
+    margin: 5px 0; /* Adjust margin for contact info */
+}
+
+.footer-social .social-icons a {
+    color: #fff; /* Social icons color */
+    margin-right: 15px; /* Space between icons */
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-social .social-icons a:hover {
+    color: #ddd; /* Highlight icons on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444; /* Subtle border for separation */
+    padding-top: 20px; /* Space above the footer bottom */
+    text-align: center; /* Center align text */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margin for bottom text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
