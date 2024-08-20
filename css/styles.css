@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 20px; /* Distance from the bottom of the viewport */
     right: 20px; /* Distance from the right of the viewport */
-    background-color: #007bff; /* Button color */
+    background-color: forestgreen; /* Button color */
     color: #fff; /* Icon color */
     border: none; /* Remove default border */
     border-radius: 50%; /* Round shape */
@@ -18,7 +18,7 @@
 }
 
 .back-to-top:hover {
-    background-color: #0056b3; /* Darker button color on hover */
+    background-color: green; /* Darker button color on hover */
 }
 
 
