@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MUBS ICT Ministry Service Centre</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section with Sliding Images</title>
 
-       <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
     <!-- Font Awesome (for icons including WhatsApp icon) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="pro.css">
-        <link rel="stylesheet" href="custom.css">
-        <link rel="stylesheet" href="about.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="animations.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animations.css">
 
-        <style>
-           .hero-section {
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        .hero-section {
             position: relative;
             overflow: hidden;
             color: #fff;
@@ -37,15 +36,11 @@
 
         .hero-section .carousel-item .hero-content {
             position: absolute;
-            bottom: 20px; /* Adjust as needed */
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             text-align: center;
             padding: 0 20px;
-        }
-
-        .hero-section .carousel-item .welcome-message {
-            margin-bottom: 20px;
         }
 
         .hero-section .carousel-item .welcome-message p {
@@ -97,12 +92,8 @@
                 width: 10%;
             }
         }
-        </style>
-
-    </head>
-
-
-    
+    </style>
+</head>
 <body>
 
     <!-- Bootstrap Navbar -->
@@ -132,8 +123,7 @@
         </div>
     </nav>
 
-
-
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div id="heroCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel Indicators -->
@@ -143,55 +133,55 @@
                 <li data-target="#heroCarousel" data-slide-to="2"></li>
                 <li data-target="#heroCarousel" data-slide-to="3"></li>
             </ol>
-    
+
             <!-- Carousel Inner -->
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('images/image5.jpg');" alt="Welcome to MUBS ICT Ministry">
+                <div class="carousel-item active" style="background-image: url('images/image5.jpg');">
                     <div class="hero-content">
                         <div class="welcome-message">
                             <p>Welcome to the MUBS ICT Ministry Service Centre</p>
                             <p>Your tech support hub for a smoother university experience!</p>
                         </div>
                         <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Chat with Us 
+                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
                         </a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/image6.jpg');" alt="Explore Our Comprehensive Software Support Services">
+                <div class="carousel-item" style="background-image: url('images/image6.jpg');">
                     <div class="hero-content">
                         <div class="welcome-message">
                             <p>Explore Our Comprehensive Software Support Services</p>
                             <p>We're here to ensure you have the tools you need for success!</p>
                         </div>
                         <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Chat with Us 
+                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
                         </a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/image7.webp');" alt="Connect with Our ICT Specialists">
+                <div class="carousel-item" style="background-image: url('images/image7.webp');">
                     <div class="hero-content">
                         <div class="welcome-message">
                             <p>Connect with Our ICT Specialists Anytime, Anywhere</p>
                             <p>We are just a message away to assist you with your tech needs!</p>
                         </div>
                         <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Chat with Us
+                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
                         </a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('images/image8.jpg');" alt="Your One-Stop Hub for All ICT Needs">
+                <div class="carousel-item" style="background-image: url('images/image8.jpg');">
                     <div class="hero-content">
                         <div class="welcome-message">
                             <p>Your One-Stop Hub for All ICT Needs</p>
                             <p>Get the support you need to excel in your academic journey.</p>
                         </div>
                         <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
-                            <i class="fab fa-whatsapp"></i> Chat with Us
+                            <i class="fab fa-whatsapp"></i> Hi Kacu👋
                         </a>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Carousel Controls -->
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -203,96 +193,30 @@
             </a>
         </div>
     </section>
-    
-    
+
+
+
+
 
     <section id="about" class="py-5 bg-light-green">
-    <div class="container">
-        <h2 class="section-title text-center mb-4">About Us</h2>
-        <div class="row">
-            <!-- Purpose of the Platform -->
-            <div class="col-md-6 mb-4">
-                <div class="card about-content animate__animated animate__fadeIn">
-                    <div class="card-body">
-                        <h3 class="card-title">Purpose of the Platform</h3>
-                        <p class="card-text">The MUBS ICT Ministry Service Centre is designed to provide comprehensive support and resources for students and staff at MUBS. Our platform aims to streamline access to essential services, facilitate seamless communication, and enhance the overall university experience. Whether you need assistance with e-learning, managing your student portal, or contacting the ICT support team, our platform is here to assist you efficiently and effectively.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- About the 27th MUBS Guild ICT Ministry -->
-            <div class="col-md-6 mb-4">
-                <div class="card about-content animate__animated animate__fadeIn animate__delay-1s">
-                    <div class="card-body">
-                        <h3 class="card-title">About the 27th MUBS Guild ICT Ministry</h3>
-                        <p class="card-text">The 27th MUBS Guild ICT Ministry is dedicated to advancing the technological infrastructure of the university. Our mission is to improve digital services, ensure robust support for students and faculty, and drive innovation in technology use across campus. We are committed to providing top-notch ICT services, including technical support, digital resource management, and ensuring that all technological needs are met efficiently.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    <section id="software" class="py-5 bg-light-green">
         <div class="container">
-            <h2 class="section-title text-center mb-4">Software Assistance</h2>
+            <h2 class="section-title text-center mb-4">About Us</h2>
             <div class="row">
-                <!-- Software Support Services -->
+                <!-- Purpose of the Platform -->
                 <div class="col-md-6 mb-4">
-                    <div class="card software-content animate__animated animate__fadeIn">
+                    <div class="card about-content animate__animated animate__fadeIn">
                         <div class="card-body">
-                            <h3 class="card-title">Our Software Support Services</h3>
-                            <p class="card-text">At the MUBS ICT Ministry Service Centre, we are committed to ensuring that students have access to the necessary software tools for their academic and personal needs. Our software support services include:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item animate__animated animate__fadeIn">
-                                    <strong>Software Installation and Configuration:</strong>
-                                    <p>Assistance with installing and configuring essential software required for coursework, research, and other academic activities.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
-                                    <strong>Licensing and Access:</strong>
-                                    <p>Guidance on obtaining and managing software licenses, including access to educational discounts and free software provided by the university.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
-                                    <strong>Troubleshooting and Support:</strong>
-                                    <p>Support for resolving issues related to software functionality, compatibility, and updates.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
-                                    <strong>Training and Tutorials:</strong>
-                                    <p>Providing training sessions and tutorials to help students effectively use software tools and applications relevant to their studies.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
-                                    <strong>Software Recommendations:</strong>
-                                    <p>Recommending suitable software solutions based on academic requirements and personal needs.</p>
-                                </li>
-                            </ul>
+                            <h3 class="card-title">Purpose of the Platform</h3>
+                            <p class="card-text">The MUBS ICT Ministry Service Centre is designed to provide comprehensive support and resources for students and staff at MUBS. Our platform aims to streamline access to essential services, facilitate seamless communication, and enhance the overall university experience. Whether you need assistance with e-learning, managing your student portal, or contacting the ICT support team, our platform is here to assist you efficiently and effectively.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Accessing Software Assistance -->
+                <!-- About the 27th MUBS Guild ICT Ministry -->
                 <div class="col-md-6 mb-4">
-                    <div class="card software-content animate__animated animate__fadeIn">
+                    <div class="card about-content animate__animated animate__fadeIn animate__delay-1s">
                         <div class="card-body">
-                            <h3 class="card-title">How to Access Software Assistance</h3>
-                            <p class="card-text">To access our software assistance services, students can:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item animate__animated animate__fadeIn">
-                                    <strong>Visit the ICT Ministry Office:</strong>
-                                    <p>Drop by our office for in-person support and consultations.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
-                                    <strong>Submit a Request Online:</strong>
-                                    <p>Use our online support request form available on our website to get help with software issues.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
-                                    <strong>Attend Workshops:</strong>
-                                    <p>Participate in our scheduled workshops and training sessions on various software tools.</p>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
-                                    <strong>Contact Us via WhatsApp:</strong>
-                                    <p>Reach out to our support team directly through WhatsApp for quick assistance and queries.</p>
-                                </li>
-                            </ul>
-                            <p class="mt-3">We strive to ensure that all students have the resources they need to succeed in their academic pursuits. Our dedicated team is here to assist you with any software-related questions or challenges you may face.</p>
+                            <h3 class="card-title">About the 27th MUBS Guild ICT Ministry</h3>
+                            <p class="card-text">The 27th MUBS Guild ICT Ministry is dedicated to advancing the technological infrastructure of the university. Our mission is to improve digital services, ensure robust support for students and faculty, and drive innovation in technology use across campus. We are committed to providing top-notch ICT services, including technical support, digital resource management, and ensuring that all technological needs are met efficiently.</p>
                         </div>
                     </div>
                 </div>
@@ -300,349 +224,419 @@
         </div>
     </section>
     
-
-
-
-    <section id="procedures" class="bg-light-green py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Step-by-Step Procedures</h2>
-            <p class="text-center mb-4">Comprehensive guidance on using MUBSEP e-learning platform, MUBS Students Portal, attending live classes, and managing tuition payments.</p>
-    
-            <div class="row">
-                <!-- MUBSEP Portal -->
-                <div class="col-md-6 mb-4">
-                    <div class="card animate__animated animate__fadeIn">
-                        <div class="card-body">
-                            <h3 class="card-title">MUBSEP Portal</h3>
-                            <p>Follow these steps to navigate the MUBSEP e-learning platform:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item animate__animated animate__fadeIn">
-                                    <strong>1. Accessing the Platform</strong>
-                                    <ul>
-                                        <li>Visit the MUBSEP website and log in using your student credentials.</li>
-                                        <li>If you’re logging in for the first time, use your student webmail (e.g., <strong>2400700000@mubs.ca.ug</strong>) and the word <strong>'password'</strong> as your Password.</li>
-                                        <li>Be sure to reset your password to a preferred strong password immediately after logging in.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-1" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
-                                    <strong>2. Navigating the Dashboard</strong>
-                                    <ul>
-                                        <li>Once logged in, explore the dashboard for an overview of your courses.</li>
-                                        <li>Check notifications and upcoming deadlines.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-2" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
-                                    <strong>3. Accessing Course Materials</strong>
-                                    <ul>
-                                        <li>Select a course to access lecture notes.</li>
-                                        <li>View reading materials and other resources provided by your instructors.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-3" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
-                                    <strong>4. Participating in Course Activities</strong>
-                                    <ul>
-                                        <li>Submit assignments online.</li>
-                                        <li>Participate in discussion forums.</li>
-                                        <li>Complete quizzes and exams.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-4" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
-                                    <strong>5. Tracking Your Progress</strong>
-                                    <ul>
-                                        <li>Check your grades and feedback.</li>
-                                        <li>Monitor your progress through course materials and activities.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-5" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
-                                    <strong>6. Communication</strong>
-                                    <ul>
-                                        <li>Use the platform’s messaging system.</li>
-                                        <li>Read announcements for important updates.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-6" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
-                                    <strong>7. Additional Features</strong>
-                                    <ul>
-                                        <li>View important dates on the integrated calendar.</li>
-                                        <li>Access support resources if needed.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-7" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
-                                    <strong>8. Logging Out</strong>
-                                    <ul>
-                                        <li>When finished, log out to ensure your account’s security.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-8" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                            </ul>
+        
+        <section id="software" class="py-5 bg-light-green">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Software Assistance</h2>
+                <div class="row">
+                    <!-- Software Support Services -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card software-content animate__animated animate__fadeIn">
+                            <div class="card-body">
+                                <h3 class="card-title">Our Software Support Services</h3>
+                                <p class="card-text">At the MUBS ICT Ministry Service Centre, we are committed to ensuring that students have access to the necessary software tools for their academic and personal needs. Our software support services include:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item animate__animated animate__fadeIn">
+                                        <strong>Software Installation and Configuration:</strong>
+                                        <p>Assistance with installing and configuring essential software required for coursework, research, and other academic activities.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
+                                        <strong>Licensing and Access:</strong>
+                                        <p>Guidance on obtaining and managing software licenses, including access to educational discounts and free software provided by the university.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
+                                        <strong>Troubleshooting and Support:</strong>
+                                        <p>Support for resolving issues related to software functionality, compatibility, and updates.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
+                                        <strong>Training and Tutorials:</strong>
+                                        <p>Providing training sessions and tutorials to help students effectively use software tools and applications relevant to their studies.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
+                                        <strong>Software Recommendations:</strong>
+                                        <p>Recommending suitable software solutions based on academic requirements and personal needs.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-    
-                <!-- Student Portal -->
-                <div class="col-md-6 mb-4">
-                    <div class="card animate__animated animate__fadeIn">
-                        <div class="card-body">
-                            <h3 class="card-title">MUBS Students Portal</h3>
-                            <p>Follow these steps for accessing and utilizing the MUBS Students Portal:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item animate__animated animate__fadeIn">
-                                    <strong>1. Logging In</strong>
-                                    <ul>
-                                        <li>Go to the MUBS Students Portal and log in with your student ID and password.</li>
-                                        <li>If you’re new, use your initial credentials provided by the administration.</li>
-                                        <li>Change your password immediately.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-9" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
-                                    <strong>2. Managing Your Profile</strong>
-                                    <ul>
-                                        <li>Update your personal details and contact information.</li>
-                                        <li>Upload any required documents.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-10" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
-                                    <strong>3. Registering for Courses</strong>
-                                    <ul>
-                                        <li>Select and register for courses offered in the current semester.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-11" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
-                                    <strong>4. Viewing Grades</strong>
-                                    <ul>
-                                        <li>Check your academic performance.</li>
-                                        <li>View your grades for completed courses.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-12" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
-                                    <strong>5. Accessing Financial Information</strong>
-                                    <ul>
-                                        <li>Review your fee statements.</li>
-                                        <li>Make payments online.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-13" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
-                                    <strong>6. Requesting Transcripts</strong>
-                                    <ul>
-                                        <li>Order academic transcripts and other certificates as needed.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-14" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
-                                    <strong>7. Communicating with Faculty</strong>
-                                    <ul>
-                                        <li>Send messages to faculty members.</li>
-                                        <li>Attend virtual office hours if available.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-15" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                                <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
-                                    <strong>8. Logging Out</strong>
-                                    <ul>
-                                        <li>Ensure you log out from the portal to protect your personal information.</li>
-                                    </ul>
-                                    <a href="https://youtube.com/tutorial-video-16" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
-                                </li>
-                            </ul>
+                    <!-- Accessing Software Assistance -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card software-content animate__animated animate__fadeIn">
+                            <div class="card-body">
+                                <h3 class="card-title">How to Access Software Assistance</h3>
+                                <p class="card-text">To access our software assistance services, students can:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item animate__animated animate__fadeIn">
+                                        <strong>Visit the ICT Ministry Office:</strong>
+                                        <p>Drop by our office for in-person support and consultations.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
+                                        <strong>Submit a Request Online:</strong>
+                                        <p>Use our online support request form available on our website to get help with software issues.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
+                                        <strong>Attend Workshops:</strong>
+                                        <p>Participate in our scheduled workshops and training sessions on various software tools.</p>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
+                                        <strong>Contact Us via WhatsApp:</strong>
+                                        <p>Reach out to our support team directly through WhatsApp for quick assistance and queries.</p>
+                                    </li>
+                                </ul>
+                                <p class="mt-3">We strive to ensure that all students have the resources they need to succeed in their academic pursuits. Our dedicated team is here to assist you with any software-related questions or challenges you may face.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
     
-    
-               
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">Contact ICT Personnel</h2>
-            <p class="text-center mb-4">Our team is here to help you with any ICT-related queries or issues. Reach out to us through the following channels:</p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="contact-card">
-                        <h3 class="contact-card-title">WhatsApp</h3>
-                        <p class="contact-card-description">For immediate assistance, you can chat with us directly via WhatsApp.</p>
-                        <a href="https://wa.me/0759315745" class="btn btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
-                        </a>
+        <section id="procedures" class="bg-light-green py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Step-by-Step Procedures</h2>
+                <p class="text-center mb-4">Comprehensive guidance on using MUBSEP e-learning platform, MUBS Students Portal, attending live classes, and managing tuition payments.</p>
+        
+                <div class="row">
+                    <!-- MUBSEP Portal -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card animate__animated animate__fadeIn">
+                            <div class="card-body">
+                                <h3 class="card-title">MUBSEP Portal</h3>
+                                <p>Follow these steps to navigate the MUBSEP e-learning platform:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item animate__animated animate__fadeIn">
+                                        <strong>1. Accessing the Platform</strong>
+                                        <ul>
+                                            <li>Visit the MUBSEP website and log in using your student credentials.</li>
+                                            <li>If you’re logging in for the first time, use your student webmail (e.g., <strong>2400700000@mubs.ca.ug</strong>) and the word <strong>'password'</strong> as your Password.</li>
+                                            <li>Be sure to reset your password to a preferred strong password immediately after logging in.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-1" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
+                                        <strong>2. Navigating the Dashboard</strong>
+                                        <ul>
+                                            <li>Once logged in, explore the dashboard for an overview of your courses.</li>
+                                            <li>Check notifications and upcoming deadlines.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-2" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
+                                        <strong>3. Accessing Course Materials</strong>
+                                        <ul>
+                                            <li>Select a course to access lecture notes.</li>
+                                            <li>View reading materials and other resources provided by your instructors.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-3" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
+                                        <strong>4. Participating in Course Activities</strong>
+                                        <ul>
+                                            <li>Submit assignments online.</li>
+                                            <li>Participate in discussion forums.</li>
+                                            <li>Complete quizzes and exams.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-4" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
+                                        <strong>5. Tracking Your Progress</strong>
+                                        <ul>
+                                            <li>Check your grades and feedback.</li>
+                                            <li>Monitor your progress through course materials and activities.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-5" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
+                                        <strong>6. Communication</strong>
+                                        <ul>
+                                            <li>Use the platform’s messaging system.</li>
+                                            <li>Read announcements for important updates.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-6" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
+                                        <strong>7. Additional Features</strong>
+                                        <ul>
+                                            <li>View important dates on the integrated calendar.</li>
+                                            <li>Access support resources if needed.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-7" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
+                                        <strong>8. Logging Out</strong>
+                                        <ul>
+                                            <li>When finished, log out to ensure your account’s security.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-8" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="contact-card">
-                        <h3 class="contact-card-title">Email</h3>
-                        <p class="contact-card-description">For detailed inquiries, feel free to send us an email. We'll get back to you as soon as possible.</p>
-                        <a href="mailto:ictministry@mubs.ac.ug" class="btn btn-email">
-                            <i class="fas fa-envelope"></i> Email Us
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <p>Follow us on social media for updates and announcements:</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/MUBSICT" class="social-icon" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/MUBSICT" class="social-icon" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/mubsiict" class="social-icon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://youtube.com/channel/YourChannelID" class="social-icon" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://instagram.com/MUBSICT" class="social-icon" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    <section id="team" class="bg-light-green py-5">
-        <div class="container">
-            <h2 class="section-title mb-4 text-center">Meet Our Team</h2>
-            <div class="row">
-                <!-- Team Member 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card team-member-card animate__animated animate__fadeIn">
-                        <img src="images/team1.jpg" class="card-img-top" alt="Hon. Matovu Solomon Humphrey Kacungwa">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Hon. Matovu Solomon Humphrey Kacungwa</h4>
-                            <p class="card-text">27th Guild ICT Minister</p>
-                            <p class="card-text">Leading the ICT Ministry with a vision to enhance digital services and provide top-tier support to all students and staff.</p>
-                            <a href="https://wa.me/0755984155" class="btn btn-whatsapp">
-                                <i class="fab fa-whatsapp"></i> Contact Me 
-                            </a>
+        
+                    <!-- Student Portal -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card animate__animated animate__fadeIn">
+                            <div class="card-body">
+                                <h3 class="card-title">MUBS Students Portal</h3>
+                                <p>Follow these steps for accessing and utilizing the MUBS Students Portal:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item animate__animated animate__fadeIn">
+                                        <strong>1. Logging In</strong>
+                                        <ul>
+                                            <li>Go to the MUBS Students Portal and log in with your student ID and password.</li>
+                                            <li>If you’re new, use your initial credentials provided by the administration.</li>
+                                            <li>Change your password immediately.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-9" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
+                                        <strong>2. Managing Your Profile</strong>
+                                        <ul>
+                                            <li>Update your personal details and contact information.</li>
+                                            <li>Upload any required documents.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-10" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
+                                        <strong>3. Registering for Courses</strong>
+                                        <ul>
+                                            <li>Select and register for courses offered in the current semester.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-11" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
+                                        <strong>4. Viewing Grades</strong>
+                                        <ul>
+                                            <li>Check your academic performance.</li>
+                                            <li>View your grades for completed courses.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-12" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
+                                        <strong>5. Accessing Financial Information</strong>
+                                        <ul>
+                                            <li>Review your fee statements.</li>
+                                            <li>Make payments online.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-13" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
+                                        <strong>6. Requesting Transcripts</strong>
+                                        <ul>
+                                            <li>Order academic transcripts and other certificates as needed.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-14" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
+                                        <strong>7. Communicating with Faculty</strong>
+                                        <ul>
+                                            <li>Send messages to faculty members.</li>
+                                            <li>Attend virtual office hours if available.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-15" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                    <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
+                                        <strong>8. Logging Out</strong>
+                                        <ul>
+                                            <li>Ensure you log out from the portal to protect your personal information.</li>
+                                        </ul>
+                                        <a href="https://youtube.com/tutorial-video-16" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card team-member-card animate__animated animate__fadeIn animate__delay-1s">
-                        <img src="images/team22.jpg" class="card-img-top" alt="Klause Mukisa">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Klause Mukisa</h4>
-                            <p class="card-text">Software Support Specialist</p>
-                            <p class="card-text">Specializing in software installation, configuration, and troubleshooting, ensuring students have the tools they need for success.</p>
+            </div>
+        </section>
+        
+        
+                   
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-center">Contact ICT Personnel</h2>
+                <p class="text-center mb-4">Our team is here to help you with any ICT-related queries or issues. Reach out to us through the following channels:</p>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-card p-4">
+                            <h3 class="contact-card-title">WhatsApp</h3>
+                            <p class="contact-card-description">For immediate assistance, you can chat with us directly via WhatsApp.</p>
                             <a href="https://wa.me/0759315745" class="btn btn-whatsapp">
-                                <i class="fab fa-whatsapp"></i> Contact Me 
+                                <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-card p-4">
+                            <h3 class="contact-card-title">Email</h3>
+                            <p class="contact-card-description">For detailed inquiries, feel free to send us an email. We'll get back to you as soon as possible.</p>
+                            <a href="mailto:ictministry@mubs.ac.ug" class="btn btn-email">
+                                <i class="fas fa-envelope"></i> Email Us
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card team-member-card animate__animated animate__fadeIn animate__delay-2s">
-                        <img src="images/team3.jpg" class="card-img-top" alt="Jjuuko Ronald">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Jjuuko Ronald</h4>
-                            <p class="card-text">Network Administrator & Senior Developer</p>
-                            <p class="card-text">Responsible for maintaining the university's network infrastructure, ensuring reliable and secure connectivity.</p>
-                            <a href="https://wa.me/0703283529" class="btn btn-whatsapp">
-                                <i class="fab fa-whatsapp"></i> Contact Me 
-                            </a>
+                <div class="text-center mt-4">
+                    <p>Follow us on social media for updates and announcements:</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/MUBSICT" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/MUBSICT" class="social-icon" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/mubsiict" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com/channel/YourChannelID" class="social-icon" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com/MUBSICT" class="social-icon" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        <section id="team" class="bg-light-green py-5">
+            <div class="container">
+                <h2 class="section-title mb-4 text-center">Meet Our Team</h2>
+                <div class="row">
+                    <!-- Team Member 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card team-member-card animate__animated animate__fadeIn">
+                            <img src="images/team1.jpg" class="card-img-top" alt="Hon. Matovu Solomon Humphrey Kacungwa">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Hon. Matovu Solomon Humphrey Kacungwa</h4>
+                                <p class="card-text">27th Guild ICT Minister</p>
+                                <p class="card-text">Leading the ICT Ministry with a vision to enhance digital services and provide top-tier support to all students and staff.</p>
+                                <a href="https://wa.me/0755984155" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contact Me 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card team-member-card animate__animated animate__fadeIn animate__delay-1s">
+                            <img src="images/team22.jpg" class="card-img-top" alt="Klause Mukisa">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Klause Mukisa</h4>
+                                <p class="card-text">Software Support Specialist</p>
+                                <p class="card-text">Specializing in software installation, configuration, and troubleshooting, ensuring students have the tools they need for success.</p>
+                                <a href="https://wa.me/0759315745" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contact Me 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card team-member-card animate__animated animate__fadeIn animate__delay-2s">
+                            <img src="images/team3.jpg" class="card-img-top" alt="Jjuuko Ronald">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Jjuuko Ronald</h4>
+                                <p class="card-text">Network Administrator & Senior Developer</p>
+                                <p class="card-text">Responsible for maintaining the university's network infrastructure, ensuring reliable and secure connectivity.</p>
+                                <a href="https://wa.me/0703283529" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contact Me 
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-
-    
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <a href="#hero">
-                    <img src="logo2.jpg" alt="MUBS ICT Ministry Service Centre Logo" class="footer-logo-img">
-                </a>
-            </div>
-            <div class="footer-links">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#procedures">Procedures</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h5>Contact Us</h5>
-                <p><i class="fas fa-map-marker-alt"></i> MUBS ICT Ministry Service Centre, Jinja Campus</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:ictministry@mubs.ac.ug">ictministry@mubs.ac.ug</a></p>
-                <p><i class="fas fa-phone"></i> +256 759 315 745</p>
-                <p><i class="fas fa-phone"></i> +256 755 984 155</p>
-                <p><i class="fas fa-phone"></i> +256 703 283 529</p>
-            </div>
-            <div class="footer-social">
-                <h5>Follow Us</h5>
-                <div class="social-icons">
-                    <a href="https://facebook.com/MUBSICT" class="social-icon" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/MUBSICT" class="social-icon" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/mubsiict" class="social-icon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://youtube.com/channel/YourChannelID" class="social-icon" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://instagram.com/MUBSICT" class="social-icon" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="#hero">
+                        <img src="logo2.jpg" alt="MUBS ICT Ministry Service Centre Logo" class="footer-logo-img">
                     </a>
                 </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#procedures">Procedures</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> MUBS ICT Ministry Service Centre, Jinja Campus</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ictministry@mubs.ac.ug">ictministry@mubs.ac.ug</a></p>
+                    <p><i class="fas fa-phone"></i> +256 759 315 745</p>
+                    <p><i class="fas fa-phone"></i> +256 755 984 155</p>
+                    <p><i class="fas fa-phone"></i> +256 703 283 529</p>
+                </div>
+                <div class="footer-social">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/MUBSICT" class="social-icon" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/MUBSICT" class="social-icon" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/mubsiict" class="social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com/channel/YourChannelID" class="social-icon" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://instagram.com/MUBSICT" class="social-icon" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 MUBS ICT Ministry Service Centre. All Rights Reserved.</p>
-        </div>
-    </footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MUBS ICT Ministry Service Centre. All Rights Reserved.</p>
+            </div>
+        </footer>
 
+
+
+
+
+    <!-- Back to Top Button -->
     <button class="back-to-top" aria-label="Scroll back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            // Show/hide "Back to Top" button
+            var backToTopButton = $('.back-to-top');
 
-<script>
-    $(document).ready(function() {
-        var btn = $('.back-to-top');
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    backToTopButton.fadeIn();
+                } else {
+                    backToTopButton.fadeOut();
+                }
+            });
+
+            // Scroll back to top
+            backToTopButton.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '300');
+            });
         });
-        btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, 300);
-        });
-    });
-</script>
-    
+    </script>
 </body>
 </html>
