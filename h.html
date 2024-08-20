@@ -1,83 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Section with Sliding Images</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .carousel-item {
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .carousel-caption {
-            position: absolute;
-            bottom: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            color: white;
-        }
-
-        .carousel-caption h5 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .carousel-caption p {
-            font-size: 1.2rem;
-        }
-    </style>
-</head>
-<body>
-
-    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#heroCarousel" data-slide-to="1"></li>
-            <li data-target="#heroCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('image1.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 1 Title</h5>
-                    <p>Slide 1 Description</p>
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide" style="background-image: url('images/image.jpg');">
+                <div class="hero-content">
+                    <h1>Welcome to the MUBS ICT Ministry Service Centre</h1>
+                    <p>Your tech support hub for a smoother university experience!</p>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('image2.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 2 Title</h5>
-                    <p>Slide 2 Description</p>
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('images/image2.jpg');">
+                <div class="hero-content">
+                    <h1>Explore Our Comprehensive Software Support Services</h1>
+                    <p>We're here to ensure you have the tools you need for success!</p>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('image3.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Slide 3 Title</h5>
-                    <p>Slide 3 Description</p>
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('images/image3.jpg');">
+                <div class="hero-content">
+                    <h1>Connect with Our ICT Specialists Anytime, Anywhere</h1>
+                    <p>We are just a message away to assist you with your tech needs!</p>
+                    <a href="https://wa.me/0759315745" class="btn btn-whatsapp" aria-label="Chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+</section>
 
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<style>
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+</style>
+
+<script>
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    const slides = document.querySelectorAll('.slide');
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    slides.forEach(slide => slide.style.transform = `translateX(-${slideIndex * 100}%)`);
+}
+
+// Auto-slide
+setInterval(() => plusSlides(1), 5000);
+</script>
