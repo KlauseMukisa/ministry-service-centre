@@ -93,6 +93,7 @@ section {
     position: relative;
     display: inline-block;
     color: #333;
+    align-items: center;
 }
 
 .section-title::before {

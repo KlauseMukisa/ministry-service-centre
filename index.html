@@ -250,21 +250,22 @@
         <div class="container">
             <h2 class="section-title text-center mb-4">About Us</h2>
             <div class="row">
-                <!-- Purpose of the Platform -->
-                <div class="col-md-6 mb-4">
-                    <div class="card about-content animate__animated animate__fadeIn">
-                        <div class="card-body">
-                            <h3 class="card-title">Purpose of the Platform</h3>
-                            <p class="card-text">The MUBS ICT Ministry Service Centre is designed to provide comprehensive support and resources for students and staff at MUBS. Our platform aims to streamline access to essential services, facilitate seamless communication, and enhance the overall university experience. Whether you need assistance with e-learning, managing your student portal, or contacting the ICT support team, our platform is here to assist you efficiently and effectively.</p>
-                        </div>
-                    </div>
-                </div>
+               
                 <!-- About the 27th MUBS Guild ICT Ministry -->
                 <div class="col-md-6 mb-4">
                     <div class="card about-content animate__animated animate__fadeIn animate__delay-1s">
                         <div class="card-body">
                             <h3 class="card-title">About the 27th MUBS Guild ICT Ministry</h3>
-                            <p class="card-text">The 27th MUBS Guild ICT Ministry is dedicated to advancing the technological infrastructure of the university. Our mission is to improve digital services, ensure robust support for students and faculty, and drive innovation in technology use across campus. We are committed to providing top-notch ICT services, including technical support, digital resource management, and ensuring that all technological needs are met efficiently.</p>
+                            <p class="card-text">The 27th MUBS Guild ICT Ministry headed by Hon. Matovu Solomon H Kacungwa is dedicated to advancing the technological infrastructure of the university. Our mission is to improve digital services, ensure robust support for students and faculties, and drive innovation in technology use across campus. We are committed to providing top-notch ICT services, including technical support, digital resource management, and ensuring that all technological needs are met efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Purpose of the Platform -->
+                 <div class="col-md-6 mb-4">
+                    <div class="card about-content animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <h3 class="card-title">Purpose of the Platform</h3>
+                            <p class="card-text">The MUBS ICT Ministry Service Centre is designed to provide comprehensive support and resources for students and staff at MUBS. Our platform aims to streamline access to essential services, facilitate seamless communication, and enhance the overall university experience. Whether you need assistance with e-learning, managing your student portal, or contacting the ICT support team, our platform is here to assist you efficiently and effectively.</p>
                         </div>
                     </div>
                 </div>
@@ -273,12 +274,19 @@
     </section>
     
         
-        <section id="software" class="py-5 bg-light-green">
-            <div class="container">
-                <h2 class="section-title text-center mb-4">Software Assistance</h2>
-                <div class="row">
-                    <!-- Software Support Services -->
-                    <div class="col-md-6 mb-4">
+    <section id="software" class="py-5 bg-light-green">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Software Assistance</h2>
+            <div class="row">
+                <!-- Software Support Services -->
+                <div class="col-md-6 mb-4">
+                    <!-- Button to Show/Hide Software Support Services -->
+                    <button class="btn btn-outline-success mb-3" type="button" data-toggle="collapse" data-target="#softwareSupportServices" aria-expanded="false" aria-controls="softwareSupportServices">
+                        Toggle Software Support Services
+                    </button>
+    
+                    <!-- Collapsible Section for Software Support Services -->
+                    <div class="collapse show" id="softwareSupportServices">
                         <div class="card software-content animate__animated animate__fadeIn">
                             <div class="card-body">
                                 <h3 class="card-title">Our Software Support Services</h3>
@@ -308,8 +316,17 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Accessing Software Assistance -->
-                    <div class="col-md-6 mb-4">
+                </div>
+    
+                <!-- Accessing Software Assistance -->
+                <div class="col-md-6 mb-4">
+                    <!-- Button to Show/Hide Accessing Software Assistance -->
+                    <button class="btn btn-outline-success mb-3" type="button" data-toggle="collapse" data-target="#accessSoftwareAssistance" aria-expanded="false" aria-controls="accessSoftwareAssistance">
+                        Toggle How to Access Software Assistance
+                    </button>
+    
+                    <!-- Collapsible Section for Accessing Software Assistance -->
+                    <div class="collapse show" id="accessSoftwareAssistance">
                         <div class="card software-content animate__animated animate__fadeIn">
                             <div class="card-body">
                                 <h3 class="card-title">How to Access Software Assistance</h3>
@@ -338,22 +355,31 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    
+    
+    
         
     
-        <section id="procedures" class="bg-light-green py-5">
-            <div class="container">
-                <h2 class="section-title text-center mb-4">Step-by-Step Procedures</h2>
-                <p class="text-center mb-4">Comprehensive guidance on using MUBSEP e-learning platform, MUBS Students Portal, attending live classes, and managing tuition payments.</p>
-        
-                <div class="row">
-                    <!-- MUBSEP Portal -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card animate__animated animate__fadeIn">
-                            <div class="card-body">
-                                <h3 class="card-title">MUBSEP Portal</h3>
-                                <p>Follow these steps to navigate the MUBSEP e-learning platform:</p>
-                                <ul class="list-group">
+    <section id="procedures" class="bg-light-green py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">The e-learning platforms</h2>
+            <p class="text-center mb-4">Comprehensive guidance on using MUBSEP e-learning platform, MUBS Students Portal, attending live classes, and managing tuition payments.</p>
+    
+            <div class="row">
+                <!-- MUBSEP Portal -->
+                <div class="col-md-6 mb-4">
+                    <div class="card animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <h3 class="card-title">MUBSEP Portal</h3>
+                            <p>Follow these steps to navigate the MUBSEP e-learning platform:</p>
+                            <button class="btn btn-outline-success mt-2 mb-3" data-toggle="collapse" data-target="#mubsepSteps" aria-expanded="false" aria-controls="mubsepSteps">
+                                View MUBSEP Portal Steps
+                            </button>
+                            <div class="collapse" id="mubsepSteps">
+                                <ul class="list-group mt-3">
+                                    <!-- MUBSEP Steps -->
                                     <li class="list-group-item animate__animated animate__fadeIn">
                                         <strong>1. Accessing the Platform</strong>
                                         <ul>
@@ -361,7 +387,7 @@
                                             <li>If you’re logging in for the first time, use your student webmail (e.g., <strong>2400700000@mubs.ca.ug</strong>) and the word <strong>'password'</strong> as your Password.</li>
                                             <li>Be sure to reset your password to a preferred strong password immediately after logging in.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-1" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
                                         <strong>2. Navigating the Dashboard</strong>
@@ -369,7 +395,7 @@
                                             <li>Once logged in, explore the dashboard for an overview of your courses.</li>
                                             <li>Check notifications and upcoming deadlines.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-2" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
                                         <strong>3. Accessing Course Materials</strong>
@@ -377,7 +403,7 @@
                                             <li>Select a course to access lecture notes.</li>
                                             <li>View reading materials and other resources provided by your instructors.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-3" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
                                         <strong>4. Participating in Course Activities</strong>
@@ -386,7 +412,7 @@
                                             <li>Participate in discussion forums.</li>
                                             <li>Complete quizzes and exams.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-4" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
                                         <strong>5. Tracking Your Progress</strong>
@@ -394,7 +420,7 @@
                                             <li>Check your grades and feedback.</li>
                                             <li>Monitor your progress through course materials and activities.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-5" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
                                         <strong>6. Communication</strong>
@@ -402,7 +428,7 @@
                                             <li>Use the platform’s messaging system.</li>
                                             <li>Read announcements for important updates.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-6" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
                                         <strong>7. Additional Features</strong>
@@ -410,27 +436,33 @@
                                             <li>View important dates on the integrated calendar.</li>
                                             <li>Access support resources if needed.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-7" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
                                         <strong>8. Logging Out</strong>
                                         <ul>
                                             <li>When finished, log out to ensure your account’s security.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-8" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Student Portal -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card animate__animated animate__fadeIn">
-                            <div class="card-body">
-                                <h3 class="card-title">MUBS Students Portal</h3>
-                                <p>Follow these steps for accessing and utilizing the MUBS Students Portal:</p>
-                                <ul class="list-group">
+                </div>
+    
+                <!-- MUBS Students Portal -->
+                <div class="col-md-6 mb-4">
+                    <div class="card animate__animated animate__fadeIn">
+                        <div class="card-body">
+                            <h3 class="card-title">MUBS Students Portal</h3>
+                            <p>Follow these steps for accessing and utilizing the MUBS Students Portal:</p>
+                            <button class="btn btn-outline-success mt-2 mb-3" data-toggle="collapse" data-target="#mubsPortalSteps" aria-expanded="false" aria-controls="mubsPortalSteps">
+                                View MUBS Students Portal Steps
+                            </button>
+                            <div class="collapse" id="mubsPortalSteps">
+                                <ul class="list-group mt-3">
+                                    <!-- MUBS Students Portal Steps -->
                                     <li class="list-group-item animate__animated animate__fadeIn">
                                         <strong>1. Logging In</strong>
                                         <ul>
@@ -438,7 +470,7 @@
                                             <li>If you’re new, use your initial credentials provided by the administration.</li>
                                             <li>Change your password immediately.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-9" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-1s">
                                         <strong>2. Managing Your Profile</strong>
@@ -446,14 +478,14 @@
                                             <li>Update your personal details and contact information.</li>
                                             <li>Upload any required documents.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-10" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-2s">
                                         <strong>3. Registering for Courses</strong>
                                         <ul>
                                             <li>Select and register for courses offered in the current semester.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-11" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-3s">
                                         <strong>4. Viewing Grades</strong>
@@ -461,7 +493,7 @@
                                             <li>Check your academic performance.</li>
                                             <li>View your grades for completed courses.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-12" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-4s">
                                         <strong>5. Accessing Financial Information</strong>
@@ -469,29 +501,28 @@
                                             <li>Review your fee statements.</li>
                                             <li>Make payments online.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-13" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-5s">
                                         <strong>6. Requesting Transcripts</strong>
                                         <ul>
                                             <li>Order academic transcripts and other certificates as needed.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-14" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-6s">
-                                        <strong>7. Communicating with Faculty</strong>
+                                        <strong>7. Scheduling Appointments</strong>
                                         <ul>
-                                            <li>Send messages to faculty members.</li>
-                                            <li>Attend virtual office hours if available.</li>
+                                            <li>Book appointments with academic advisors or administrative staff.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-15" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                     <li class="list-group-item animate__animated animate__fadeIn animate__delay-7s">
                                         <strong>8. Logging Out</strong>
                                         <ul>
-                                            <li>Ensure you log out from the portal to protect your personal information.</li>
+                                            <li>Always log out when you're done using the portal to keep your information secure.</li>
                                         </ul>
-                                        <a href="https://youtube.com/@ICTministryMUBS" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
+                                        <a href="https://youtube.com/tutorial-video-16" target="_blank" class="btn btn-outline-success mt-2">Watch Tutorial</a>
                                     </li>
                                 </ul>
                             </div>
@@ -499,7 +530,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    
+    
         
         
                    
